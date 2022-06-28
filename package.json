@@ -34,7 +34,6 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "start": "tsx ./src/index.ts",
-    "play": "npm -C playground run dev",
     "stub": "unbuild --stub",
     "build": "unbuild",
     "prepublishOnly": "pnpm run build",
