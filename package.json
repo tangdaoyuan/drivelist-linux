@@ -24,9 +24,13 @@
     "./*": "./*"
   },
   "files": [
+    "bin",
     "dist",
     "*.d.ts"
   ],
+  "bin": {
+    "drivelist-linux": "./bin/cli.js"
+  },
   "scripts": {
     "test": "vitest",
     "test:run": "vitest run",
@@ -43,8 +47,13 @@
     "url": "https://github.com/tangdaoyuan/drivelist-linux/issues"
   },
   "homepage": "https://github.com/tangdaoyuan/drivelist-linux#readme",
+  "dependencies": {
+    "picocolors": "^1.0.0",
+    "yargs": "^17.5.1"
+  },
   "devDependencies": {
     "@suger-tdy/eslint-config": "1.1.5",
+    "@types/yargs": "^17.0.10",
     "bumpp": "8.2.1",
     "esbuild": "0.14.47",
     "eslint": "8.18.0",

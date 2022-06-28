@@ -3,6 +3,7 @@ import { promises as fs } from 'fs'
 import { join, resolve } from 'path'
 import { promisify } from 'util'
 import type { Drive } from '../types'
+import Logger from '../logger'
 import { parse as parseJSON } from './json'
 import { parse as parsePairs } from './pairs'
 
@@ -95,7 +96,7 @@ async function $lsblk(): Promise<Drive[]> {
       return await lsblkJSON()
     }
     catch (error) {
-      console.error(error)
+      Logger.error(error)
       SUPPORTS_JSON = false
     }
   }
@@ -111,7 +112,7 @@ export async function lsblk(debug = false): Promise<Drive[]> {
     await addDevicePaths(drives)
   }
   catch (error) {
-    console.error(error)
+    Logger.error(error)
   }
   return drives
 }
