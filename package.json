@@ -1,6 +1,6 @@
 {
   "name": "@suger-tdy/drivelist-linux",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "packageManager": "pnpm@7.3.0",
   "description": "Get driver list in linux",
   "keywords": [
