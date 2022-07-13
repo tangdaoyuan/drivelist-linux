@@ -4,6 +4,7 @@ export default defineBuildConfig({
   entries: [
     './src/index',
     './src/cli',
+    './src/types',
   ],
   declaration: true,
   clean: true,
