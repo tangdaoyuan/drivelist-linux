@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
-import { bold, cyan, magenta, red } from 'picocolors'
+import picocolors from 'picocolors'
+const { bold, cyan, magenta, red } = picocolors
 
 export default class Logger {
   static info(jsonObject: Object) {
