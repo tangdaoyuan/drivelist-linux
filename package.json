@@ -46,9 +46,6 @@
   "bugs": {
     "url": "https://github.com/tangdaoyuan/drivelist-linux/issues"
   },
-  "os": [
-    "linux"
-  ],
   "homepage": "https://github.com/tangdaoyuan/drivelist-linux#readme",
   "dependencies": {
     "picocolors": "^1.0.0",
